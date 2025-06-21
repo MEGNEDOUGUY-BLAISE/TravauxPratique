@@ -84,7 +84,7 @@ header {
   border-color: #ffd700;
 }
 
-/* ----- POPUPS ----- */
+/* ----- POPUPS (détails produits) ----- */
 .popup {
   display: none;
   position: fixed;
