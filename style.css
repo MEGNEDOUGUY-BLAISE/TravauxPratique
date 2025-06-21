@@ -9,11 +9,7 @@ body {
   background-attachment: fixed;
 }
 
-header {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  text-align: right;
-}
+
 .h1{
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -23,6 +19,7 @@ header {
 .nav {
   text-align: right;
   padding: auto;
+  background: #42e4c6;
 }
 
 nav a {
@@ -32,7 +29,7 @@ nav a {
   font-weight: bold;
 }
 
-.p {
+.footer, p {
   text-align: right;
 }
 
