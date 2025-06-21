@@ -1,3 +1,4 @@
+/* ----- STYLE GLOBAL ----- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,7 +10,7 @@ body {
   color: #fff;
 }
 
-/* Header */
+/* ----- HEADER ----- */
 header {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 10px 30px;
@@ -19,13 +20,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo img {
-  height: 30px;
+  height: 50px;
 }
 
-/* Menu */
+/* ----- MENU DE NAVIGATION ----- */
 .menu a {
   margin: 0 15px;
   text-decoration: none;
@@ -38,7 +40,7 @@ header {
   color: #ffd700;
 }
 
-/* Section centrale (texte au centre de la page) */
+/* ----- HERO SECTION (page d’accueil) ----- */
 .hero {
   height: 80vh;
   display: flex;
@@ -46,7 +48,7 @@ header {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.4); /* effet sur texte lisible */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero-text h1 {
@@ -58,7 +60,66 @@ header {
   font-size: 1.5em;
 }
 
-/* Footer */
+/* ----- CATALOGUE D’IMAGES (produits) ----- */
+.catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 10px;
+  gap: 20px;
+}
+
+.article img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, border-color 0.3s;
+}
+
+.article img:hover {
+  transform: scale(1.05);
+  border-color: #ffd700;
+}
+
+/* ----- POPUPS ----- */
+.popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  border: 2px solid #5e412f;
+  padding: 20px;
+  z-index: 10;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup:target {
+  display: block;
+}
+
+.close {
+  display: inline-block;
+  margin-top: 10px;
+  background: #5e412f;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* ----- FOOTER ----- */
 footer {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
