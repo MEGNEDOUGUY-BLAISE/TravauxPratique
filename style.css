@@ -14,12 +14,26 @@ header {
   padding: 20px;
   text-align: right;
 }
+.h1{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30%;
+}
+
+.nav {
+  text-align: right;
+  padding: auto;
+}
 
 nav a {
   margin: 0 10px;
   text-decoration: none;
   color: #5e412f;
   font-weight: bold;
+}
+
+.p {
+  text-align: right;
 }
 
 .catalogue {
